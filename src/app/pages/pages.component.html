@@ -1,0 +1,18 @@
+<nb-layout>
+  <nb-layout-header fixed class="header">
+    <div class="logo-container">
+      <a (click)="toggleCompact()" class="sidebar-toggle">
+        <nb-icon icon="menu-2-outline"></nb-icon>
+      </a>
+      <a class="logo" ><span>{{'Jay Maharaj' | uppercase}}</span></a>
+    </div>
+    <nb-actions size="small">
+    </nb-actions>
+  </nb-layout-header>
+
+  <nb-sidebar tag="left" responsive>
+    <nb-menu [items]="menu"></nb-menu>
+  </nb-sidebar>
+
+  <nb-layout-column> </nb-layout-column>
+</nb-layout>
